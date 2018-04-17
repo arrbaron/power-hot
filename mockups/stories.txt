@@ -1,0 +1,34 @@
+===USER STORIES===
+
+WORKOUTS
+I can create workouts that are comprised of multiple exercises
+I can duplicate workouts
+I can delete workouts
+I can mark a workout as "done"
+I can make notes on a workout
+
+EXERCISES
+I can add exercises in a workout
+I can remove exercises in a workout
+I can edit exercises in a workout
+I can edit weight of a workout
+I can edit sets of a workout
+I can edit reps of a workout
+
+WORKING OUT
+I can log my sets (with reps completed)
+I can edit my completed reps on a set
+I can log my effort on a set (easy, ok, hard)
+I can see a rest timer
+I can receive a notification when my rest is complete
+
+PROGRESS
+I can see a graph of my progress on particular exercises
+I can see a graph of my progress on particular workouts
+
+QUOTES
+I can inspirational quotes after completing (or failing to complete) an exercise
+
+SETTINGS
+I can set my default weight unit
+I can set my default rest times
