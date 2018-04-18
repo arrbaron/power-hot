@@ -32,3 +32,5 @@ export default StackNavigator({
     screen: Exercises
   }
 });
+
+console.disableYellowBox = true;
