@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Workouts from './pages/Workouts';
+import { StackNavigator } from 'react-navigation';
 
-class App extends React.Component<{}> {
+import Workouts from './pages/Workouts';
+import Exercises from './pages/Exercises';
+
+export class App extends React.Component<{}> {
   render() {
     return (
       <View style={styles.container}>
@@ -21,4 +24,11 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default StackNavigator({
+  Workouts: {
+    screen: Workouts
+  },
+  Exercises: {
+    screen: Exercises
+  }
+});

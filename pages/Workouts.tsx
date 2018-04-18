@@ -1,8 +1,17 @@
 import * as React from 'react';
-import { StyleSheet, Text, View, FlatList } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
+
 import Workout from '../components/Workout';
+import navStyles from '../styles/navStyles';
 
 class Workouts extends React.Component<{}> {
+  static navigationOptions = ({ navigation }) => {
+    return {
+      ...navStyles,
+      title: 'Workouts'
+    }
+  };
+
   constructor() {
     super();
     this.state = {
@@ -80,6 +89,10 @@ class Workouts extends React.Component<{}> {
     }
   }
 
+  goToExercises = () => {
+    this.props.navigation.navigate('Exercises');
+  };
+
   render() {
     const workouts = this.state.workouts.map((workout: object, index: number) => {
       return <Workout
@@ -93,6 +106,10 @@ class Workouts extends React.Component<{}> {
     return (
       <View style={styles.container}>
         {workouts}
+        <Button
+          onPress={this.goToExercises}
+          title="Go to exercises page"
+        />
       </View>
     );
   }
