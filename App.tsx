@@ -1,11 +1,12 @@
 import * as React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Workouts from './pages/Workouts';
 
 class App extends React.Component<{}> {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Open up App.ts to start working on your app!</Text>
+        <Workouts />
       </View>
     );
   }
